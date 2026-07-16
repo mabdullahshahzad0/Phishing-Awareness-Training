@@ -22,7 +22,7 @@ An interactive, single-page online training module built for **Task 2** of the *
 
 ```
 phishing-awareness-training/
-├── index.html      # the entire training module (HTML + CSS + JS, single file)
+├── Phishing.html      # the entire training module (HTML + CSS + JS, single file)
 └── README.md        # this file
 ```
 
@@ -34,9 +34,9 @@ No installation needed — it's a static HTML file.
 ```bash
 git clone https://github.com/<your-username>/phishing-awareness-training.git
 cd phishing-awareness-training
-open index.html      # macOS
-start index.html      # Windows
-xdg-open index.html   # Linux
+open Phishing.html      # macOS
+start Phishing.html      # Windows
+xdg-open Phishing.html   # Linux
 ```
 
 **Option 2: Host it for free with GitHub Pages**
