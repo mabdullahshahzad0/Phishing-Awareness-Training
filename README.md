@@ -1,12 +1,12 @@
-# 🛡️ Phishing Awareness Training
+#  Phishing Awareness Training
 
 An interactive, single-page online training module built for **Task 2** of the **CodeAlpha Cyber Security Internship**. It teaches employees and everyday users how to recognize phishing emails and fake websites, understand the social engineering tactics attackers rely on, and build habits that prevent falling victim — capped off with a scored knowledge-check quiz.
 
-🔗 **Live demo:** open `index.html` in any browser, or enable GitHub Pages (see below) for a hosted link.
+🔗 **Live demo:** open `Phishing.html` in any browser, or enable GitHub Pages (see below) for a hosted link.
 
 ---
 
-## ✨ Features
+## Features
 
 - **What Is Phishing?** — a plain-language introduction with a key statistic callout.
 - **Types of Phishing Attacks** — Email, Spear, Whaling, Smishing, Vishing, and Clone phishing explained side by side.
@@ -18,7 +18,7 @@ An interactive, single-page online training module built for **Task 2** of the *
 - **Scored Knowledge Check** — a 5-question interactive quiz with instant feedback, explanations, a final score, and a retake option.
 - Fully responsive, works on desktop and mobile, no build step or dependencies required.
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 phishing-awareness-training/
@@ -26,7 +26,7 @@ phishing-awareness-training/
 └── README.md        # this file
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 No installation needed — it's a static HTML file.
 
@@ -46,7 +46,7 @@ xdg-open index.html   # Linux
 4. Your live training module will be available at:
    `https://<your-username>.github.io/phishing-awareness-training/`
 
-## ⬆️ Uploading to GitHub
+##  Uploading to GitHub
 
 If this project isn't already in a repository:
 
@@ -60,13 +60,13 @@ git remote add origin https://github.com/<your-username>/phishing-awareness-trai
 git push -u origin main
 ```
 
-## 🧰 Built With
+##  Built With
 
 - HTML5, CSS3 (custom properties, CSS Grid & Flexbox), vanilla JavaScript — no frameworks or build tools
 - [Google Fonts](https://fonts.google.com/) — Fraunces (display) & Inter (body)
 - Inline SVG icons
 
-## 📚 About This Task
+##  About This Task
 
 > **Task 2: Phishing Awareness Training**
 > - Create a presentation or online module focused on phishing attacks.
@@ -77,7 +77,7 @@ git push -u origin main
 
 This project satisfies every requirement above as a self-contained, interactive **online module**.
 
-## 👤 Author
+##  Author
 
 **Muhammad Abdullah Shahzad**
 Cyber Security Intern — CodeAlpha
