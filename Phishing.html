@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phishing Awareness Training | CodeAlpha Cyber Security Internship</title>
+<meta name="description" content="An interactive phishing awareness training module: recognize phishing emails and fake websites, understand social engineering, and test your knowledge.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="brand"><span class="dot"></span>PhishGuard Training</div>
+    <div class="nav-links">
+      <a href="#what-is">Basics</a>
+      <a href="#anatomy">Spot It</a>
+      <a href="#social-engineering">Tactics</a>
+      <a href="#practices">Best Practices</a>
+      <a href="#quiz">Quiz</a>
+    </div>
+    <a href="#quiz" class="nav-cta">Take the Quiz</a>
+    <button class="burger" id="burgerBtn" aria-label="Menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#what-is">Basics</a>
+    <a href="#anatomy">Spot It</a>
+    <a href="#social-engineering">Tactics</a>
+    <a href="#practices">Best Practices</a>
+    <a href="#quiz">Quiz</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap">
+    <div class="kicker">CodeAlpha Cyber Security Internship &nbsp;•&nbsp; Task 2</div>
+    <h1>Phishing Awareness Training</h1>
+    <p>An interactive module to help you recognize phishing emails and fake websites, understand the psychology attackers exploit, and build habits that keep you — and your organization — safe.</p>
+  </div>
+</section>
+
+<!-- ============ WHAT IS PHISHING ============ -->
+<section id="what-is">
+  <div class="wrap">
+    <div class="eyebrow">The Basics</div>
+    <h2 class="sec">What Is Phishing?</h2>
+    <p class="sec-sub">Before spotting an attack, it helps to understand exactly what you're up against.</p>
+
+    <div class="wip-grid">
+      <ul class="wip-list">
+        <li><span class="num">01</span><div><b>A cyberattack</b> <span>that tricks people into revealing sensitive information, credentials, or installing malware.</span></div></li>
+        <li><span class="num">02</span><div><b>Attackers impersonate</b> <span>trusted brands, coworkers, banks, or institutions to earn quick trust.</span></div></li>
+        <li><span class="num">03</span><div><b>The leading entry point</b> <span>for ransomware, account takeovers, and large-scale data breaches.</span></div></li>
+        <li><span class="num">04</span><div><b>It targets people, not just systems</b> <span>— success depends on psychology as much as technology.</span></div></li>
+      </ul>
+
+      <div class="stat-card">
+        <div class="circle">
+          <svg class="i" viewBox="0 0 24 24" fill="none" stroke="#14213D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div class="big">#1</div>
+        <div class="label">Cause of data breaches worldwide</div>
+        <hr>
+        <p>Billions of phishing emails are sent every single day — most filtered silently, but it only takes one click to cause real damage.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TYPES ============ -->
+<section style="background:var(--lightbg);">
+  <div class="wrap">
+    <div class="eyebrow">Know Your Enemy</div>
+    <h2 class="sec">Types of Phishing Attacks</h2>
+    <p class="sec-sub">Different disguises, same goal: steal information or access.</p>
+
+    <div class="type-grid">
+      <div class="type-card">
+        <div class="icon"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+        <h3>Email Phishing</h3>
+        <p>Mass fraudulent emails impersonating trusted senders.</p>
+      </div>
+      <div class="type-card">
+        <div class="icon"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+        <h3>Spear Phishing</h3>
+        <p>Highly targeted attacks built on personal details.</p>
+      </div>
+      <div class="type-card">
+        <div class="icon"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+        <h3>Whaling</h3>
+        <p>Attacks aimed squarely at executives and leadership.</p>
+      </div>
+      <div class="type-card">
+        <div class="icon"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
+        <h3>Smishing</h3>
+        <p>Phishing delivered through SMS text messages.</p>
+      </div>
+      <div class="type-card">
+        <div class="icon"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+        <h3>Vishing</h3>
+        <p>Voice calls impersonating banks or support desks.</p>
+      </div>
+      <div class="type-card">
+        <div class="icon"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></div>
+        <h3>Clone Phishing</h3>
+        <p>A real email is copied and its links swapped.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ANATOMY (INTERACTIVE) ============ -->
+<section id="anatomy">
+  <div class="wrap">
+    <div class="eyebrow">Spot It — Interactive</div>
+    <h2 class="sec">Anatomy of a Phishing Email</h2>
+    <p class="sec-sub">Click each highlighted line below to reveal why it's a red flag.</p>
+
+    <div class="anatomy-wrap">
+      <div>
+        <div class="mock-email">
+          <div class="mock-head"><span class="dot"></span> INBOX — 1 new message</div>
+          <div class="mock-body">
+            <div class="m-row"><span class="lbl">FROM:</span>
+              <span class="flagme" data-tip="Look closely — 'paypa1.com' uses the digit 1 instead of the letter l. Always check the exact domain, not just the display name.">Support-Team@secure-paypa1.com<span class="badge">1</span></span>
+            </div>
+            <div class="m-row"><span class="lbl">SUBJECT:</span>
+              <span class="flagme" data-tip="Urgent, threatening subject lines are designed to make you act before you think.">URGENT: Your account will be suspended!<span class="badge">2</span></span>
+            </div>
+            <div class="m-row"><span class="lbl">TO:</span> you@company.com</div>
+            <hr class="m-divider">
+            <div class="m-greet">
+              <span class="flagme" data-tip="Legitimate companies you have an account with usually greet you by name — a generic greeting suggests a mass, untargeted attack.">Dear Customer,<span class="badge">3</span></span>
+            </div>
+            <div class="m-body-text">We noticed unusual activity on your account. You must verify your details immediately or your account will be permanently closed within 24 hours.</div>
+            <span class="flagme" data-tip="Hover any real link before clicking — the visible text can say anything while the actual destination points somewhere malicious.">
+              <span class="m-btn">Verify My Account →<span class="badge">4</span></span>
+            </span>
+            <div class="m-attach">
+              <span class="flagme" data-tip="Unexpected attachments — especially .zip, .exe, or macro-enabled files — are a common malware delivery method.">📎 invoice_details.zip<span class="badge">5</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="anatomy-hint">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          Tap or click the numbered flags above — each reveals a real-world red flag.
+        </div>
+      </div>
+
+      <ul class="checklist" id="checklist">
+        <li data-n="1"><span class="num-badge">1</span> Mismatched or spoofed sender address</li>
+        <li data-n="2"><span class="num-badge">2</span> Urgent, threatening language</li>
+        <li data-n="3"><span class="num-badge">3</span> Generic greeting — "Dear Customer"</li>
+        <li data-n="4"><span class="num-badge">4</span> Suspicious or shortened links</li>
+        <li data-n="5"><span class="num-badge">5</span> Unexpected attachments</li>
+        <li data-n="6"><span class="num-badge">6</span> Spelling &amp; grammar errors</li>
+        <li data-n="7"><span class="num-badge">7</span> Requests for passwords or payment</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAKE WEBSITE ============ -->
+<section style="background:var(--lightbg);">
+  <div class="wrap">
+    <div class="eyebrow">Spot It</div>
+    <h2 class="sec">How to Spot a Fake Website</h2>
+    <p class="sec-sub">Before you type in a password, take five seconds to check.</p>
+
+    <div class="fw-grid">
+      <div class="fw-item">
+        <div class="icon"><svg class="i-sm" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg></div>
+        <div><h4>Check the URL carefully</h4><p>Watch for misspellings or extra characters, like paypa1.com instead of paypal.com.</p></div>
+      </div>
+      <div class="fw-item">
+        <div class="icon"><svg class="i-sm" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+        <div><h4>Look for HTTPS &amp; the padlock</h4><p>A good sign — but not proof. Attackers can fake these too.</p></div>
+      </div>
+      <div class="fw-item">
+        <div class="icon"><svg class="i-sm" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8Z"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <div><h4>Inspect the design quality</h4><p>Broken logos, odd layouts, or inconsistent branding are warning signs.</p></div>
+      </div>
+      <div class="fw-item">
+        <div class="icon"><svg class="i-sm" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg></div>
+        <div><h4>No verifiable contact info</h4><p>Missing About, Contact, or Privacy pages are a red flag.</p></div>
+      </div>
+      <div class="fw-item">
+        <div class="icon"><svg class="i-sm" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+        <div><h4>Unexpected pop-ups</h4><p>Fake urgent warnings or "you've won" messages signal a scam.</p></div>
+      </div>
+      <div class="fw-item">
+        <div class="icon"><svg class="i-sm" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+        <div><h4>Type the address yourself</h4><p>Don't rely on links in emails or texts — navigate manually.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOCIAL ENGINEERING ============ -->
+<section id="social-engineering" class="dark">
+  <div class="wrap">
+    <div class="eyebrow amber" style="color:var(--amber);">The Psychology</div>
+    <h2 class="sec">Social Engineering Tactics</h2>
+    <p class="sec-sub">Phishing isn't a technology problem first — it's a psychology problem.</p>
+
+    <div class="se-list">
+      <div class="se-row">
+        <div class="icon"><svg class="i-sm" viewBox="0 0 24 24" fill="none" stroke="#14213D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <div class="title">Authority</div>
+        <div class="desc">Impersonating a boss, bank, or government official to demand compliance.</div>
+      </div>
+      <div class="se-row">
+        <div class="icon"><svg class="i-sm" viewBox="0 0 24 24" fill="none" stroke="#14213D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <div class="title">Urgency</div>
+        <div class="desc">"Act now or your account will be suspended" — no time to think.</div>
+      </div>
+      <div class="se-row">
+        <div class="icon"><svg class="i-sm" viewBox="0 0 24 24" fill="none" stroke="#14213D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+        <div class="title">Fear</div>
+        <div class="desc">Threatening legal action, fines, or loss of access to pressure a reaction.</div>
+      </div>
+      <div class="se-row">
+        <div class="icon"><svg class="i-sm" viewBox="0 0 24 24" fill="none" stroke="#14213D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+        <div class="title">Curiosity</div>
+        <div class="desc">Enticing subject lines like "You won a prize!" to bait a click.</div>
+      </div>
+      <div class="se-row">
+        <div class="icon"><svg class="i-sm" viewBox="0 0 24 24" fill="none" stroke="#14213D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <div class="title">Trust &amp; Familiarity</div>
+        <div class="desc">Mimicking a coworker, friend, or well-known brand to lower your guard.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REAL WORLD PATTERNS ============ -->
+<section style="background:var(--lightbg);">
+  <div class="wrap">
+    <div class="eyebrow">Why It Matters</div>
+    <h2 class="sec">Real-World Attack Patterns</h2>
+    <p class="sec-sub">These aren't hypothetical — variations of each happen every day.</p>
+
+    <div class="rw-grid">
+      <div class="rw-card">
+        <div class="icon"><svg class="i-sm" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+        <h3>Business Email Compromise</h3>
+        <p>Attackers impersonate executives or vendors to trick finance teams into wiring company funds to fraudulent accounts — one of the costliest phishing patterns for organizations worldwide.</p>
+      </div>
+      <div class="rw-card">
+        <div class="icon"><svg class="i-sm" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+        <h3>Credential Spear-Phishing</h3>
+        <p>Employees receive convincing, personalized messages designed to harvest login credentials, giving attackers a foothold into internal systems and tools.</p>
+      </div>
+      <div class="rw-card">
+        <div class="icon"><svg class="i-sm" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
+        <h3>Smishing Delivery Scams</h3>
+        <p>Fake "missed delivery" texts link to cloned courier websites that harvest payment details from unsuspecting recipients.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BEST PRACTICES ============ -->
+<section id="practices">
+  <div class="wrap">
+    <div class="eyebrow">Defend Yourself</div>
+    <h2 class="sec">Best Practices &amp; Tips</h2>
+    <p class="sec-sub">Small habits that block almost every phishing attempt.</p>
+
+    <div class="bp-grid">
+      <div class="bp-item"><div class="icon"><svg class="i-sm" viewBox="0 0 24 24" fill="none" stroke="#14213D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><p>Pause before you click — verify the sender and the link first</p></div>
+      <div class="bp-item"><div class="icon"><svg class="i-sm" viewBox="0 0 24 24" fill="none" stroke="#14213D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><p>Hover to preview a link's real destination before trusting it</p></div>
+      <div class="bp-item"><div class="icon"><svg class="i-sm" viewBox="0 0 24 24" fill="none" stroke="#14213D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><p>Never share passwords or OTPs over email, text, or phone</p></div>
+      <div class="bp-item"><div class="icon"><svg class="i-sm" viewBox="0 0 24 24" fill="none" stroke="#14213D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><p>Enable multi-factor authentication (MFA) on every account</p></div>
+      <div class="bp-item"><div class="icon"><svg class="i-sm" viewBox="0 0 24 24" fill="none" stroke="#14213D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><p>Keep software, browsers, and antivirus fully updated</p></div>
+      <div class="bp-item"><div class="icon"><svg class="i-sm" viewBox="0 0 24 24" fill="none" stroke="#14213D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><p>Use a password manager to keep every password unique</p></div>
+      <div class="bp-item"><div class="icon"><svg class="i-sm" viewBox="0 0 24 24" fill="none" stroke="#14213D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><p>Report suspicious messages to IT/security — don't just delete</p></div>
+      <div class="bp-item"><div class="icon"><svg class="i-sm" viewBox="0 0 24 24" fill="none" stroke="#14213D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><p>When in doubt, verify through a separate, trusted channel</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUIZ ============ -->
+<section id="quiz" style="background:var(--lightbg);">
+  <div class="wrap">
+    <div class="eyebrow">Test Yourself</div>
+    <h2 class="sec">Knowledge Check</h2>
+    <p class="sec-sub">Answer all five questions, then check your score. Try to beat 4/5.</p>
+
+    <form id="quizForm">
+      <div class="quiz-card" data-answer="b">
+        <div class="quiz-q">Q1. Which of these is a common phishing red flag?</div>
+        <div class="quiz-opts">
+          <label class="quiz-opt"><input type="radio" name="q1" value="a"> A personalized, familiar greeting</label>
+          <label class="quiz-opt"><input type="radio" name="q1" value="b"> An urgent request for immediate payment</label>
+          <label class="quiz-opt"><input type="radio" name="q1" value="c"> An email from a verified company domain</label>
+          <label class="quiz-opt"><input type="radio" name="q1" value="d"> A message with no links or attachments</label>
+        </div>
+        <div class="quiz-explain">Urgency is a classic manipulation tactic used to bypass careful thinking.</div>
+      </div>
+
+      <div class="quiz-card" data-answer="b">
+        <div class="quiz-q">Q2. What should you do before clicking a link in an email?</div>
+        <div class="quiz-opts">
+          <label class="quiz-opt"><input type="radio" name="q2" value="a"> Click it immediately to check</label>
+          <label class="quiz-opt"><input type="radio" name="q2" value="b"> Hover over it to preview the real URL</label>
+          <label class="quiz-opt"><input type="radio" name="q2" value="c"> Forward it to a friend for their opinion</label>
+          <label class="quiz-opt"><input type="radio" name="q2" value="d"> Reply to the sender with your password</label>
+        </div>
+        <div class="quiz-explain">Hovering reveals the real destination link before you ever click it.</div>
+      </div>
+
+      <div class="quiz-card" data-answer="b">
+        <div class="quiz-q">Q3. Which best defines "spear phishing"?</div>
+        <div class="quiz-opts">
+          <label class="quiz-opt"><input type="radio" name="q3" value="a"> A random, mass email blast</label>
+          <label class="quiz-opt"><input type="radio" name="q3" value="b"> A targeted attack using personal details</label>
+          <label class="quiz-opt"><input type="radio" name="q3" value="c"> A phone-only scam technique</label>
+          <label class="quiz-opt"><input type="radio" name="q3" value="d"> A type of antivirus software</label>
+        </div>
+        <div class="quiz-explain">Spear phishing uses research on a specific person to feel convincing.</div>
+      </div>
+
+      <div class="quiz-card" data-answer="c">
+        <div class="quiz-q">Q4. A padlock icon and "https://" in the address bar mean a website is...</div>
+        <div class="quiz-opts">
+          <label class="quiz-opt"><input type="radio" name="q4" value="a"> Definitely safe and verified</label>
+          <label class="quiz-opt"><input type="radio" name="q4" value="b"> Owned by a government agency</label>
+          <label class="quiz-opt"><input type="radio" name="q4" value="c"> Encrypted, but not proof it's legitimate</label>
+          <label class="quiz-opt"><input type="radio" name="q4" value="d"> Free of any possible phishing risk</label>
+        </div>
+        <div class="quiz-explain">Attackers can buy HTTPS certificates too — the padlock only means the connection is encrypted, not that the site is trustworthy.</div>
+      </div>
+
+      <div class="quiz-card" data-answer="d">
+        <div class="quiz-q">Q5. You receive a suspicious email at work. What's the best first step?</div>
+        <div class="quiz-opts">
+          <label class="quiz-opt"><input type="radio" name="q5" value="a"> Click the link to see where it goes</label>
+          <label class="quiz-opt"><input type="radio" name="q5" value="b"> Reply asking the sender to confirm</label>
+          <label class="quiz-opt"><input type="radio" name="q5" value="c"> Forward it to a coworker to check</label>
+          <label class="quiz-opt"><input type="radio" name="q5" value="d"> Report it to your IT/security team</label>
+        </div>
+        <div class="quiz-explain">Reporting lets security teams investigate and protect others who may have received the same message.</div>
+      </div>
+
+      <div class="quiz-actions">
+        <button type="submit" class="btn btn-amber" id="submitQuizBtn">
+          <svg class="i-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Check My Answers
+        </button>
+        <div class="quiz-score" id="quizScoreLive"></div>
+      </div>
+    </form>
+
+    <div id="quizResult">
+      <div class="big" id="resultScore">0 / 5</div>
+      <p id="resultMsg">Review the highlighted answers above, then try again.</p>
+      <button class="btn btn-outline" id="retakeBtn" style="color:#fff; border-color:rgba(255,255,255,0.3);">Retake the Quiz</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="icon">
+      <svg class="i" viewBox="0 0 24 24" fill="none" stroke="#14213D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11z"/></svg>
+    </div>
+    <h2>Stay Alert. Stay Secure.</h2>
+    <p>Every phishing attempt relies on one thing: a rushed decision. Slow down, verify, and it loses.</p>
+    <hr class="footer-line">
+    <div class="footer-credit">Muhammad Abdullah Shahzad &nbsp;•&nbsp; CodeAlpha Cyber Security Internship &nbsp;•&nbsp; Task 2</div>
+  </div>
+</footer>
+
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>
